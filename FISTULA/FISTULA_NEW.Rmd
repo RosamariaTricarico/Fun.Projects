@@ -11,7 +11,7 @@ output: html_notebook
 
 Arteriovenous fistula for hemodialysis access fails to clinically mature in [28-53%](https://cjasn.asnjournals.org/content/clinjasn/1/2/332.full.pdf) of the cases.
 
-*The project's goal is to identify unique responses related to successufully mature fistulas and failed fistulas,* by investigating inter-correlations among time-changes in fistula morphology, hemodynamics, gene expression, and smooth muscle cell and endothelial cell dysfunctions. 
+*The project's goal is to identify unique responses related to successufully mature fistulas and failed fistulas,* by investigating inter-correlations among time-changes in fistula morphology, hemodynamics, gene expression, and smooth muscle cell and endothelial cell dysfunctions.   
 These results can play a fundamental role in the understanding of fistula maturation and failure mechanisms and are therefore of great interest to hospital and biomedical companies for better patient-selection and treatment. 
 
 ***
