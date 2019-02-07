@@ -363,20 +363,20 @@ Significant <- subset(Table, pvalue<.01 & abs(log2FoldChange)>a)
 Significant
 write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 ```
-  
-  
-***
-
+   
+   
+   
 ***By investigating the genomics of all patients which fistula failied or shown anatomic/hemodynamic signatures of failure risks, we are able to obtain a list of genes potenitally involved with fistula failure mechanicsms.***
-
-***
   
+
+  
+***
   
 **USEFUL LINKS:**
   
 Full material, including [Data-sets](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/DATA-SETS) and [R-scripts](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/R-SCRIPTS) can be found at [GitHub/RosamariaTricarico/PROJECTS/FISTULA](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA).
 
-  
+***
   
 **ADDITIONAL REFERENCES:**
   
