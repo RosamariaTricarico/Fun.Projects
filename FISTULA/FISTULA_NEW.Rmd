@@ -12,7 +12,7 @@ output: html_notebook
 Arteriovenous fistula for hemodialysis access fails to clinically mature in [28-53%](https://cjasn.asnjournals.org/content/clinjasn/1/2/332.full.pdf) of the cases.
 
 *The project's goal is to identify whether unique responses occur for fistulas that successfully mature and/or those that don’t,* by investigating on inter-correlations among time-changes in fistula morphology, hemodynamics, gene expression, and smooth muscle cell and endothelial cell dysfunctions. 
-These results can play a fundamental role in the understanding fistula maturation and failure causes and are therefore of great interest to hospital and biomedical companies for better patient-selection and treatment. 
+These results can play a fundamental role in the understanding of fistula maturation and failure mechanisms and are therefore of great interest to hospital and biomedical companies for better patient-selection and treatment. 
 
 ***
 
@@ -366,9 +366,9 @@ write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 
 ***
 
-*By investigating the genomics of all patients which fistula failied or shown anatomic/hemodynamic signatures of failure risks, we are able to obtain a list of genes potenitally involved with fistula failure mechanicsms.*
+***By investigating the genomics of all patients which fistula failied or shown anatomic/hemodynamic signatures of failure risks, we are able to obtain a list of genes potenitally involved with fistula failure mechanicsms.***
 
 ***
 
-**Full material, including [Data-sets](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/DATA-SETS) and [R-scripts](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/R-SCRIPTS) can be found at [GitHub/RosamariaTricarico/PROJECTS/FISTULA](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA).**  
+>> Full material, including [Data-sets](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/DATA-SETS) and [R-scripts](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/R-SCRIPTS) can be found at [GitHub/RosamariaTricarico/PROJECTS/FISTULA](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA).
 
