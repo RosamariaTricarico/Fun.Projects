@@ -366,7 +366,7 @@ write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
    
    
    
-> ***By investigating the genomics of all patients which fistula failied or shown anatomic/hemodynamic signatures of failure risks, we are able to obtain a list of genes potenitally involved with fistula failure mechanicsms.***
+> ***By investigating the genomics of all patients whose fistula failied or shown anatomic/hemodynamic signatures of failure risks, we are able to obtain a list of genes potenitally involved with fistula failure mechanisms.***
   
 
   
