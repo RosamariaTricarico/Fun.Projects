@@ -1,4 +1,4 @@
-# Fun.Projects
+# PROJECTS
 
 ***
 Practicing on Data Science projects
