@@ -3,14 +3,12 @@
 ***
 
 Content:
-1. **GENOMIC DATA-SETS**: *"Neutrophil.csv", "Monocyte_smaller.csv"*   
-2. **HEMODYNAMIC DATA-SETS**: *"Hemodynamics_Fistula-Artery.csv", "Hemodynamics_Fistula-Vein.csv"*  
-3. **BRACHIAL ARTERY DILATION  DATA-SETS**: *"FMD_NMD data_N1.xlsx", "FMD_NMD data_M2.xlsx"* 
-
+1. **GENOMIC DATA-SETS**
+2. **HEMODYNAMIC DATA-SETS**
+3. **BRACHIAL ARTERY DILATION  DATA-SETS**
 ***
 
-**1. GENOMIC DATA-SETS**  
-*"Neutrophil.csv", "Monocyte_smaller.csv"*  
+**1. GENOMIC DATA-SETS**: *"Neutrophil.csv", "Monocyte_smaller.csv"*  
 'data.frame':	26831 obs. of  100-150 variables:  
 $ Gene     : Factor w/ 25193 levels "41699","41700",..: 24220 24194 7770 23654 3747 12443 13803 14186 24219 21453 ...  
  $ X31043.B : num  5.08 5.74 6.42 6.69 5.75 ...  
@@ -33,8 +31,7 @@ B = baseline
 
 ***
 
-**2. HEMODYNAMIC DATA-SETS**  
-*"Hemodynamics_Fistula-Artery.csv", "Hemodynamics_Fistula-Vein.csv"*  
+**2. HEMODYNAMIC DATA-SETS**: *"Hemodynamics_Fistula-Artery.csv", "Hemodynamics_Fistula-Vein.csv"*  
 'data.frame':	9001 obs. of  9 variables:  
  $ Patient: Factor w/ 50 levels "031072 EM","031103 PJ",..: 1 1 1 1 1 1 1 1 1 1 ...  
  $ Site   : Factor w/ 1 level "Florida": 1 1 1 1 1 1 1 1 1 1 ...  
@@ -62,8 +59,7 @@ G = gradient
   
 ***
   
-**3. BRACHIAL ARTERY DILATION  DATA-SETS**  
-*"FMD_NMD data_N1.xlsx", "FMD_NMD data_M2.xlsx"*  
+**3. BRACHIAL ARTERY DILATION  DATA-SETS**: *"FMD_NMD data_N1.xlsx", "FMD_NMD data_M2.xlsx"*  
 
 Data were collected in two separate files.  
 Each xlsx file contains two excel sheets (FMD and NMD).   
