@@ -4,12 +4,12 @@
 
 Content:
 1. **GENOMIC DATA-SETS**: *"Neutrophil.csv", "Monocyte_smaller.csv"*   
-2: **HEMODYNAMIC DATA-SETS** *"Hemodynamics_Fistula-Artery.csv", "Hemodynamics_Fistula-Vein.csv"*  
-3: **BRACHIAL ARTERY DILATION  DATA-SETS** *"FMD_NMD data_N1.xlsx", "FMD_NMD data_M2.xlsx"* 
+2. **HEMODYNAMIC DATA-SETS**: *"Hemodynamics_Fistula-Artery.csv", "Hemodynamics_Fistula-Vein.csv"*  
+3. **BRACHIAL ARTERY DILATION  DATA-SETS**: *"FMD_NMD data_N1.xlsx", "FMD_NMD data_M2.xlsx"* 
 
 ***
 
-**GENOMIC DATA-SETS**  
+**1. GENOMIC DATA-SETS**  
 *"Neutrophil.csv", "Monocyte_smaller.csv"*  
 'data.frame':	26831 obs. of  100-150 variables:  
 $ Gene     : Factor w/ 25193 levels "41699","41700",..: 24220 24194 7770 23654 3747 12443 13803 14186 24219 21453 ...  
@@ -31,7 +31,9 @@ $ Gene     : Factor w/ 25193 levels "41699","41700",..: 24220 24194 7770 23654 3
 B = baseline     
 2W = 2 weeks    
 
-**HEMODYNAMIC DATA-SETS**  
+***
+
+**2. HEMODYNAMIC DATA-SETS**  
 *"Hemodynamics_Fistula-Artery.csv", "Hemodynamics_Fistula-Vein.csv"*  
 'data.frame':	9001 obs. of  9 variables:  
  $ Patient: Factor w/ 50 levels "031072 EM","031103 PJ",..: 1 1 1 1 1 1 1 1 1 1 ...  
@@ -58,8 +60,9 @@ WSS = wall shear stress
 Ave = average   
 G = gradient    
   
+***
   
-**BRACHIAL ARTERY DILATION  DATA-SETS**  
+**3. BRACHIAL ARTERY DILATION  DATA-SETS**  
 *"FMD_NMD data_N1.xlsx", "FMD_NMD data_M2.xlsx"*  
 
 Data were collected in two separate files.  
