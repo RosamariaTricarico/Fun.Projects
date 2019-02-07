@@ -55,7 +55,7 @@ We will first have an overview of the full anatomic-hemodyamic and genomic data-
 *MONOCYTES*:
 I extracted the average fold change of gene expression from baseline, for monocytes. Data sample of the fist five genes is displayed below. 
 
-```{r message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Read the gene expression data set
 Monocyte <- read.csv(file="Monocyte.csv",head=TRUE,sep=",")
 p <- dim(Monocyte);
@@ -80,7 +80,7 @@ head(Results)
 
 Then I created a Volcano plot to display the distribution of gene-specific fold change from baseline and marked the genes with p-value > .01 and fold change > 1.3 to identify those which might play a role during fistula remodeling and adaption.
 
-```{r}
+```{r echo=FALSE}
 # Make a basic volcano plot
 Table <- read.table("Monocyte_FC-PV.txt", header=TRUE)
 with(Table, plot(log2FoldChange, -log10(pvalue), pch=1, main="Monocyte", xlim=c(-1,1)))
@@ -276,10 +276,10 @@ xyplot(area + WSSave + WSSmax + WSSGave + OSI ~ d.mm, data = Patient1_FoldChange
                 columns=2, cex=0.7,
                 lines=TRUE))
 ```
-This figure shows that along some portions of the vein the cross-sectional area increased up to 2.5 fold at six months, suggesting vessel adaptation and remodeling.   
-However, some other portions of the vein present close to no area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation. 
+This figure shows that along some portions of the vein (30-40 mm) the cross-sectional area increased up to 2.5 fold at six months, suggesting vessel adaptation and remodeling.   
+However, some other portions of the vein (10-20 mm) present close to no area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation. 
 
-For this reason, next we analyze the genomic of this patient to identify genes that might be involved in fistula maturation failure.
+Next, we will analyze the genomic of this patient to identify genes that might be involved with fistula maturation failure mechanisms.
 
 ***4. PATIENT 1 - GENOMICS***
 
