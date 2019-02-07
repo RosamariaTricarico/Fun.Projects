@@ -1,5 +1,14 @@
 # DATA-SETS DESCRIPTION      
-  
+
+***
+
+Content:
+1. **GENOMIC DATA-SETS**: *"Neutrophil.csv", "Monocyte_smaller.csv"*   
+2: **HEMODYNAMIC DATA-SETS** *"Hemodynamics_Fistula-Artery.csv", "Hemodynamics_Fistula-Vein.csv"*  
+3: **BRACHIAL ARTERY DILATION  DATA-SETS** *"FMD_NMD data_N1.xlsx", "FMD_NMD data_M2.xlsx"* 
+
+***
+
 **GENOMIC DATA-SETS**  
 *"Neutrophil.csv", "Monocyte_smaller.csv"*  
 'data.frame':	26831 obs. of  100-150 variables:  
