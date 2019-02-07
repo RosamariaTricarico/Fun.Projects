@@ -363,7 +363,8 @@ Significant <- subset(Table, pvalue<.01 & abs(log2FoldChange)>a)
 Significant
 write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 ```
-
+  
+  
 ***
 
 ***By investigating the genomics of all patients which fistula failied or shown anatomic/hemodynamic signatures of failure risks, we are able to obtain a list of genes potenitally involved with fistula failure mechanicsms.***
@@ -371,12 +372,14 @@ write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 ***
   
   
-USEFUL LINKS:
+**USEFUL LINKS:**
   
 Full material, including [Data-sets](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/DATA-SETS) and [R-scripts](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/R-SCRIPTS) can be found at [GitHub/RosamariaTricarico/PROJECTS/FISTULA](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA).
 
-ADDITIONAL REFERENCES:  
   
-ML Robbin et al. [Arteriovenous fistula development in the first 6 weeks after creation.](https://pubs.rsna.org/doi/pdf/10.1148/radiol.2015150385) Radiology 2016; 279:620–629  
+  
+**ADDITIONAL REFERENCES:**
+  
+- ML Robbin et al. [Arteriovenous fistula development in the first 6 weeks after creation.](https://pubs.rsna.org/doi/pdf/10.1148/radiol.2015150385) Radiology 2016; 279:620–629  
 
-Y He et al. [Serial analysis of lumen geometry and hemodynamics in human arteriovenous fistula for hemodialysis using magnetic resonance imaging and computational fluid dynamics.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4120947/pdf/nihms419674.pdf) J Biomech. 2013; 46:165–169.
+- Y He et al. [Serial analysis of lumen geometry and hemodynamics in human arteriovenous fistula for hemodialysis using magnetic resonance imaging and computational fluid dynamics.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4120947/pdf/nihms419674.pdf) J Biomech. 2013; 46:165–169.
