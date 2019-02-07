@@ -11,8 +11,8 @@ output: html_notebook
 
 Arteriovenous fistula for hemodialysis access fails to clinically mature in [28-53%](https://cjasn.asnjournals.org/content/clinjasn/1/2/332.full.pdf) of the cases.
 
-My goal is to identify inter-correlations among time-changes in fistula morphology, hemodynamics, gene expression, and smooth muscle cell and endothelial cell dysfunctions.
-These results can play a fundamental role in the understating of fistula maturation and failure causes and are therefore of great interest to hospital and biomedical companies for better patient-selection and treatment. 
+*The project's goal is to identify whether unique responses occur for fistulas that successfully mature and/or those that don’t,* by investigating on inter-correlations among time-changes in fistula morphology, hemodynamics, gene expression, and smooth muscle cell and endothelial cell dysfunctions. 
+These results can play a fundamental role in the understanding fistula maturation and failure causes and are therefore of great interest to hospital and biomedical companies for better patient-selection and treatment. 
 
 ***
 
@@ -221,11 +221,10 @@ xyplot(OSI ~ d.mm | Scan, data = ArteryHemodynamics, groups = Patient, type = "l
       strip=my.strip, layout=c(1, 3, 1), xlab="Artery Length [mm]", ylab="Oscillatory Shear Index")
 ```
 
-As the *vein anatomy and hemodynamics* undergo to the largest changes, most visible from the area graphs, for the purposes of this brief presentation, from now on we will focus *vein* investigation.
+As the *vein anatomy and hemodynamics* undergo to the largest changes (most visible from the area and wall shear stress graphs), for the purposes of this brief presentation, from now on we will focus on anatomy and hemoydnmaics on the *vein* portion of the fistula.
+*Specifically, we will investigate the anatomy and hemodynamics on one patient as well as his genomic results, aiming to associate anatomic and hemodynamic changes in time to significant genomic variations.*
 
-*Moving to the next phase of the epxloratory analysis, we will dive in our data-sets in more depth.  *
-*By investigating the anatomy and hemodynamics on a patient-specific basis and compare it with the patient-specific genomic results, we can obtain a list of genes that are potentially involved with fistula remodelling and/or maturation failure mechanics.  *
-*Aim: identify whether unique responses occur for fistulas that successfully mature and those that don’t.*
+***
 
 ***3. PATIENT 1 - MORPHOLOGY AND HEMODYNAMICS***
 
@@ -367,7 +366,7 @@ write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 
 ***
 
-*By investigating the genomics of all patients which fistula already failied or show hemodynamic signatures of failure, we are able to obtain a list of genes potenitally involved with fistula failure mechanicsms.*
+*By investigating the genomics of all patients which fistula failied or shown anatomic/hemodynamic signatures of failure risks, we are able to obtain a list of genes potenitally involved with fistula failure mechanicsms.*
 
 ***
 
