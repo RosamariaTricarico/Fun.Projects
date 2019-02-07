@@ -20,7 +20,7 @@ These results can play a fundamental role in the understanding of fistula matura
 
 Over 650,000 Americans are affected by [end stage renal disease](https://www.niddk.nih.gov/health-information/health-statistics/kidney-disease), which requires [hemodialysis treatment](https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis) until availability for kidney transplant. 
 [Arteriovenous fistula](https://surgery.ucsf.edu/conditions--procedures/vascular-access-for-hemodialysis.aspx), a surgical connection between artery and vein of the arm, is recognized as the best hemodialysis access, as it has been reported to have lower thrombosis and infection rates compared to other fistulas. 
-However, obtaining clinically mature fistula is challenging and the causes of fistula maturation failures are unknown. [Research investigations](https://pubs.rsna.org/doi/pdf/10.1148/radiol.2015150385) are being performed to gain an insight into the mechanisms of maturation failure, from vascular anatomy and hemodynamics, to cell dysfunction and genomics that might play a role in vascular maturation, yet among the major limitations are small data-sets and lack of interconnection among events at micro- and macro-scales.
+However, obtaining clinically mature fistula is challenging and the causes of fistula maturation failures are unknown. [Research investigations](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4134933/pdf/nihms608837.pdf) are being performed to gain an insight into the mechanisms of maturation failure, from vascular anatomy and hemodynamics, to cell dysfunction and genomics that might play a role in vascular maturation, yet among the major limitations are small data-sets and lack of interconnection among events at micro- and macro-scales.
 
 The [Division of Vascular Surgery at the University of Florida Shands Hospital](https://vascular.surgery.med.ufl.edu/research/national-institutes-of-health-study-of-av-fistulas/) has dedicated over 8 years on multiscale analyses on arteriovenous fistula maturation placing itself among the top six internationally recognized centers specialized on the topic. This vaste research has generated large patient-specific data-sets, now available for data science exploration.
 
@@ -371,6 +371,11 @@ write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 ***
   
   
+USEFUL LINKS:
   
-> Full material, including [Data-sets](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/DATA-SETS) and [R-scripts](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/R-SCRIPTS) can be found at [GitHub/RosamariaTricarico/PROJECTS/FISTULA](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA).
+Full material, including [Data-sets](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/DATA-SETS) and [R-scripts](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA/R-SCRIPTS) can be found at [GitHub/RosamariaTricarico/PROJECTS/FISTULA](https://github.com/RosamariaTricarico/PROJECTS/tree/master/FISTULA).
 
+Additional references:
+[ML Robbin et al. Arteriovenous fistula development in the first 6 weeks after creation. Radiology 2016; 279:620–629](https://pubs.rsna.org/doi/pdf/10.1148/radiol.2015150385)
+
+[Y He et al. Serial analysis of lumen geometry and hemodynamics in human arteriovenous fistula for hemodialysis using magnetic resonance imaging and computational fluid dynamics. J Biomech. 2013; 46:165–169.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4120947/pdf/nihms419674.pdf)
