@@ -14,9 +14,9 @@ $ Gene     : Factor w/ 25193 levels "41699","41700",..: 24220 24194 7770 23654 3
 - The codes listed in the fist column "Gene" indicate the gene code/name   
 - The number that follows the "X" in "X31043.B" indicates the patient number (= 31043), following the dot is time of data acquisition (B = baseline, 2W = 2 weeks)      
   
-*CAUTION: This is a double entry table:*  
-*Each row corresponds to a different gene*  
-*Each column corresponds to a patient's data recording (there are two data recording times for each patient: baseline and 2 weeks)* 
+*CAUTION: This is a double entry table.*  
+*- Each row corresponds to a different gene*  
+*- Each column corresponds to a patient's data recording (there are two data recording times for each patient: baseline and 2 weeks)* 
 
 *Abbreviations:*    
 B = baseline     
