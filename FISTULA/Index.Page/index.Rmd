@@ -1,8 +1,9 @@
 ---
-title: "Index Page"
+title: "Index"
 date: "02/07/2019"
 ---
 
+***
 
 ### Table of contents
 
@@ -19,3 +20,5 @@ for (i in seq_along(rmd)) {
 }
 cat("</ul>")
 ```
+
+***
