@@ -1,0 +1,81 @@
+---
+title: "PATIENT-SPECIFIC VEIN MORPHOLOGY & HEMODYNAMICS"
+author: "Rosamaria Tricarico"
+date: "February 1, 2018"
+output: html_notebook
+---
+
+
+***
+
+**Patient-specific fold changes from baseline are displayed below for the five parameters of interest at 6 weeks and 6 months post-intervention.**  
+
+**Patient#:** 31143  
+
+**Parameters of interest:**  
+- Oscillatory shear index  
+- Average wall shear stress (WSS) gradients  
+- Maximum WSS  
+- Average WSS   
+- Cross-sectional area  
+
+**Paramters units:** [] fold changes from baseline
+
+**Time points:** 6 weeks, 6 months post-fistula
+
+**Description:** The figure shows that along some portions of the vein (30-40 mm) the cross-sectional area increases up to 2.5 fold at six months, suggesting vessel adaptation and remodeling.   
+However, some other portions of the vein (10-20 mm) present near-to-zero area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation.   
+
+**Goal:** by running this script on the 50-patient data-set, the fistulas at risk of failure are identified.
+
+***
+
+```{r echo=FALSE}
+# Read the hemodynamic data set
+Hemodynamics <- read.csv(file="Hemodynamics_Fistula-Vein.csv", head=TRUE, sep=",")
+Patient1 <- filter(Hemodynamics, Patient == "031143 HJ")
+Baseline <- filter(Patient1, Scan == 1)
+Week6 <- filter(Patient1, Scan == 2)
+Month6 <- filter(Patient1, Scan == 3)
+n <- dim(Baseline);
+m <- (n[1]);
+FoldChange_Week6 <- Week6[5:9]/Baseline[5:9]
+FoldChange_Month6 <- Month6[5:9]/Baseline[5:9]
+xdim <- head(Patient1[4:4],m)
+Patient1_FoldChange_Week6 = cbind(xdim, FoldChange_Week6);
+Patient1_FoldChange_Month6 = cbind(xdim, FoldChange_Month6);
+#--Define plot titles:
+lab.area <- "Area"
+lab.WSSave <- "Average WSS"
+lab.WSSmax <- "Maximum WSS"
+lab.WSSGave <- "Average WSS gradient"
+lab.OSI <- "Oscillatory Shear Index"
+#--Custom strip function:
+my.strip <- function(which.given, which.panel, ...) {
+  strip.labels <- c(lab.area, lab.WSSave, lab.WSSmax, lab.WSSGave, lab.OSI)
+  panel.rect(0, 0, 1, 1, col="#ffe5cc", border=1)
+  panel.text(x=0.5, y=0.5, adj=c(0.5, 0.55), cex=0.95,
+             lab=strip.labels[which.panel[which.given]])}
+#settings for graph title style
+my.settings <- list(
+  par.main.text = list(font = 2, # make it bold
+                       just = "left", 
+                       x = grid::unit(5, "mm")),
+  par.sub.text = list(font = 0.5, 
+                      just = "left", 
+                      x = grid::unit(5, "mm")))
+#Creating the combined graph
+Patient1_FoldChange = 0;
+Patient1_FoldChange = rbind(Patient1_FoldChange_Week6, Patient1_FoldChange_Month6);
+#View(Patient1_FoldChange)
+Scan <- tail(Patient1[3:3],(n[1]*2));
+Patient1_FoldChange = cbind(Scan,Patient1_FoldChange);
+xyplot(area + WSSave + WSSmax + WSSGave + OSI ~ d.mm, data = Patient1_FoldChange, groups = Scan, scales=list(y="free", rot=0),type = "l", 
+       grid = TRUE, strip=my.strip, outer=TRUE, layout=c(1, 5, 1), xlab="Vein Length [mm]", ylab="",
+       key=list(text=list(c("6 weeks", "6 months")),
+                title="Patient 31143 - Fold change from baseline",
+                col=c("deepskyblue3", "deeppink"), lty=c(1, 1),
+                columns=2, cex=0.7,
+                lines=TRUE))
+
+```
